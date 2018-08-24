@@ -8,7 +8,13 @@ body {
     
 }
 .container{
-    background-image: url(restaurant.jpg); 
+    background-image: 
+        linear-gradient(
+            to right bottom,
+            rgba(80, 80, 80, 0.619),
+            rgba(9, 9, 9, 0.646)
+        ),    
+        url(restaurant.jpg); 
     width: 100%;
     height: 80vh;
     background-size: cover;
@@ -52,19 +58,17 @@ body {
     width: 40%;
 }
 .x{
-   
     margin-top: 5%;
-
 }
-@media(max-width:600px){
-    .img{
-        flex-direction: column;
-       
 
+@media(max-width:375px){
+    .img{
+        flex-direction: column;       
     }
     .food{
-        margin-bottom: 5%
-    }
+        width: 100%;
+        margin-bottom: 15px;
+        }
     .x{
         margin-top: 0;
     }
